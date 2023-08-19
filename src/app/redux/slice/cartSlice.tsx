@@ -26,7 +26,7 @@ const cartSlice = createSlice({
       const existingItem = state.items.find(item => item.id === newItem.id);
 
       if (existingItem) {
-        existingItem.quantity++;
+        // existingItem.quantity++;
         toast.error("This product already exists", {
           position: toast.POSITION.BOTTOM_RIGHT,
         });
